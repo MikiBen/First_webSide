@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>	Przychód </title>
+	<meta name="description" content="Tworzenie aplikacji do zarządzania budżetem domowym ">
+	<meta name="keywords" content="budżer, domowy, wydatki, wpływy">
+	<meta name="author" content="Mikołaj Narloch">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="Strona Budzet.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	
+</head>
+
+<body  >
+
+	<form action="Menu Głowne.html">
+				<div class="container">
+						<header>
+							<div id="title">
+									<h1> Budżet domowy</h1>	
+							</div>
+						<header>
+						
+						<div class="row">
+				
+								<label> Kwota przychodu <input class="przychod" type="text" name="kwota" placeholder="PLN" required></label>
+						</div>
+						
+						<div class="row">
+						<label> Data przychodu	<input class="przychod" type="date" name="dzien"  required></label>
+						</div>
+						
+					<fieldset>
+					
+						<legend> Kategoria przychodu </legend>
+				
+							<div ><label ><input type="radio" value="1" name="przychod" checked  > Wynagrodzenie  </label></div>
+							<div><label ><input type="radio" value="2" name="przychod"> Odsetki bankowe </label></div>
+							<div><label><input type="radio" value="3" name="przychod"> Sprzedaż na allegro </label></div>
+							<div><label><input type="radio" value="3" name="przychod"> Inne </label></div>
+				
+					</fieldset>
+					
+					<fieldset>	
+					
+							<legend> Komentarz </legend>
+							<div><label for="komentarz"></label> </div>
+							<textarea name="komentarz" id="komentarz" rows="4" cols="80" maxlength="25" minlength="10">  </textarea>
+					</fieldset>
+					
+						<div >
+							<input type="submit" value="Dodaj przychód">
+							<a id="buttonCancel" href="Menu Głowne.html"><input id="cancel" value="Anuluj"></a>
+						<div>
+					<footer>
+						
+							<div class="footer"> 2020 &copy;  Mikołaj Narloch -  Budżet domowy
+							
+
+							</div>
+					</footer>
+					
+					
+				</div>
+		
+		</form>
+		
+
+
+
+</body>
+
+</html>
