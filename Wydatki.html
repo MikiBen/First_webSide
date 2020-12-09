@@ -3,6 +3,7 @@
 <head>
 
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>	Wydatki </title>
 	<meta name="description" content="Tworzenie aplikacji do zarządzania budżetem domowym ">
 	<meta name="keywords" content="budżer, domowy, wydatki, wpływy">
@@ -10,7 +11,8 @@
 	
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
 	
-	<link rel="stylesheet" href="Strona Budzet.css">
+	<link rel="stylesheet" href="StronaBudzet.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
 	
@@ -22,70 +24,93 @@
 
 <body  >
 
-	<form action="Menu Głowne.html">
+	<main>
+			
+			<article>
 				<div class="container">
+				
 						<header>
-							<div id="title">
 									<h1> Budżet domowy</h1>	
+						</header>
+						
+						<div class="row">
+				
+									<form action="MenuGlowne.html" class=" col-lg-10 offset-lg-1 offset-xl-2 col-md-12">
+										<div>
+											<label> Kwota wydatku <input class="wydatek" type="text" name="kwota" placeholder="PLN" required></label>
+									</div>
+									
+									<div>
+									<label> Data wydatku	<input class="wydatek" type="date" name="dzien"  required></label>
+									</div>
+									
+									<fieldset class="radio">
+								
+									<legend> Sposób płatności </legend>
+							
+										<div ><label ><input type="radio" value="1" name="wydatekSposobPlatnosci" checked  > Gotówka  </label></div>
+										<div><label ><input type="radio" value="2" name="wydatekSposobPlatnosci"> Karta debetowa </label></div>
+										<div><label><input type="radio" value="3" name="wydatekSposobPlatnosci"> Karta kredytowa </label></div>
+														
+								</fieldset>
+									
+								<fieldset >
+								<legend> Kategoria wydatku </legend>
+									
+									
+								<div class="row mt-1 ml-0 no-gutters">
+									<div class=" category col-lg-4  col-md-6 my-1 ">	
+										<div><label ><input type="radio" value="1" name="kategoriaWydatku" checked  > Jedzenie  </label></div>
+										<div><label ><input type="radio" value="2" name="kategoriaWydatku"> Mieszkanie</label></div>
+										<div><label><input type="radio" value="3" name="kategoriaWydatku"> Transport </label></div>
+										<div><label><input type="radio" value="4" name="kategoriaWydatku"> Telekomunikacja </label></div>
+										<div><label><input type="radio" value="5" name="kategoriaWydatku"> Opieka zdrowotna </label></div>
+										<div><label><input type="radio" value="6" name="kategoriaWydatku"> Ubranie </label></div>
+									</div>
+									
+									<div class="category col-lg-4  col-md-6 my-1">	
+										<div><label><input type="radio" value="7" name="kategoriaWydatku"> Higiena </label></div>
+										<div><label><input type="radio" value="8" name="kategoriaWydatku"> Dzieci </label></div>
+										<div><label><input type="radio" value="9" name="kategoriaWydatku"> Rozrywka </label></div>
+										<div><label><input type="radio" value="10" name="kategoriaWydatku"> Wycieczka </label></div>
+										<div><label><input type="radio" value="11" name="kategoriaWydatku"> Szkolenia </label></div>
+										<div><label><input type="radio" value="12" name="kategoriaWydatku"> Książki </label></div>
+									</div>
+									
+									<div class="category col-lg-4 col-md-6 my-1 ">	
+										
+										<div><label><input type="radio" value="13" name="kategoriaWydatku"> Oszczędności </label></div>
+										<div><label><input type="radio" value="14" name="kategoriaWydatku"> Na złotą jesień, czyli emeryturę </label></div>
+										<div><label><input type="radio" value="15" name="kategoriaWydatku"> Spłata długów </label></div>
+										<div><label><input type="radio" value="16" name="kategoriaWydatku"> Darowizna </label></div>
+										<div><label><input type="radio" value="17" name="kategoriaWydatku"> Inne wydatki </label></div>
+									</div>
+									
+									</div>
+								</fieldset>
+								
+								<fieldset >	
+								
+										<legend> Krótki komentarz </legend>
+										<div><label for="komentarz">
+										<textarea  name="komentarz" id="komentarz" rows="4" cols="48" maxlength="40" minlength="2">  </textarea></label>  </div>
+								</fieldset>
+								
+								
+									<div class="row" >
+										 <label class="col-6"><input class="button" type="submit" value="Dodaj wydatek"></label>
+										 
+										<label class="col-6" ><input class="button"  id="cancel" value="Anuluj"></label>
+									</div>
+									</form>
+									
 							</div>
-						<header>
+					</div>
+				</article>
+		</main>
 						
-						<div class="row">
-				
-								<label> Kwota wydatku <input class="wydatek" type="text" name="kwota" placeholder="PLN" required></label>
-						</div>
 						
-						<div class="row">
-						<label> Data wydatku	<input class="wydatek" type="date" name="dzien"  required></label>
-						</div>
 						
-						<fieldset>
-					
-						<legend> Sposób płatności </legend>
-				
-							<div ><label ><input type="radio" value="1" name="wydatekSposobPlatnosci" checked  > Gotówka  </label></div>
-							<div><label ><input type="radio" value="2" name="wydatekSposobPlatnosci"> Karta debetowa </label></div>
-							<div><label><input type="radio" value="3" name="wydatekSposobPlatnosci"> Karta kredytowa </label></div>
-											
-					</fieldset>
-						
-					<fieldset>
-					
-						<legend> Kategoria wydatku </legend>
-				
-							<div ><label ><input type="radio" value="1" name="kategoriaWydatku" checked  > Jedzenie  </label></div>
-							<div><label ><input type="radio" value="2" name="kategoriaWydatku"> Mieszkanie</label></div>
-							<div><label><input type="radio" value="3" name="kategoriaWydatku"> Transport </label></div>
-							<div><label><input type="radio" value="4" name="kategoriaWydatku"> Telekomunikacja </label></div>
-							<div><label><input type="radio" value="5" name="kategoriaWydatku"> Opieka zdrowotna </label></div>
-							<div><label><input type="radio" value="6" name="kategoriaWydatku"> Ubranie </label></div>
-							<div><label><input type="radio" value="7" name="kategoriaWydatku"> Higiena </label></div>
-							<div><label><input type="radio" value="8" name="kategoriaWydatku"> Dzieci </label></div>
-							<div><label><input type="radio" value="9" name="kategoriaWydatku"> Rozrywka </label></div>
-							<div><label><input type="radio" value="10" name="kategoriaWydatku"> Wycieczka </label></div>
-							<div><label><input type="radio" value="11" name="kategoriaWydatku"> Szkolenia </label></div>
-							<div><label><input type="radio" value="12" name="kategoriaWydatku"> Książki </label></div>
-							<div><label><input type="radio" value="13" name="kategoriaWydatku"> Oszczędności </label></div>
-							<div><label><input type="radio" value="14" name="kategoriaWydatku"> Na złotą jesień, czyli emeryturę </label></div>
-							<div><label><input type="radio" value="15" name="kategoriaWydatku"> Spłata długów </label></div>
-							<div><label><input type="radio" value="16" name="kategoriaWydatku"> Darowizna </label></div>
-							<div><label><input type="radio" value="17" name="kategoriaWydatku"> Inne wydatki </label></div>
-				
-					</fieldset>
-					
-					<fieldset>	
-					
-						<legend> Komentarz </legend>
-						<div><label for="komentarz"></label> </div>
-						<textarea name="komentarz" id="komentarz" rows="4" cols="80" maxlength="25" minlength="10">  </textarea>
-					</fieldset>
-					
-						<div >
-							 <input type="submit" value="Dodaj wydatek">
-							<a id="buttonCancel" href="Menu Głowne.html"><input id="cancel" value="Anuluj"></a>
-							
-							
-						<div>
 					<footer>
 						
 							<div class="footer"> 2020 &copy;  Mikołaj Narloch -  Budżet domowy
@@ -94,10 +119,14 @@
 					</footer>
 					
 					
-				</div>
 		
-		</form>
 		
+		
+					<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+					
+					<script src="js/bootstrap.min.js"></script>	
 
 
 

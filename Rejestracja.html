@@ -3,6 +3,8 @@
 <head>
 
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
 	<title> Rejestracja </title>
 	<meta name="description" content="Tworzenie aplikacji do zarządzania budżetem domowym ">
 	<meta name="keywords" content="budżer, domowy, wydatko, wpływy">
@@ -10,7 +12,9 @@
 	
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
 	
-	<link rel="stylesheet" href="Strona Budżet.css">
+	<link rel="stylesheet" href="StronaBudzet.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
 	
@@ -21,38 +25,56 @@
 </head>
 
 <body  >
-		
-		<form action="Logowanie.html">
+
+		<main>
+			<article>
 				<div class="container">
-						<header>
-							<div id="title">
-							
-									<h1> Budżet domowy</h1>		
-															
-							</div>
+
 						<header>
 							
+								
+									<h1> Budżet domowy</h1>
+								
+
+						</header>
+						
+							<div class="row">
+
+										<div class="window mx-auto">
 										
-						<div class="window">
-
-							<label><input  type="text" placeholder="Imię"    required></label>
+												<form action="Logowanie.html">
+														<label><input  type="text" placeholder="Imię"    required></label>
+														
+														<label><input  type="password" placeholder="Hasło" required></label>
+														
+														<label><input type="email"  placeholder="E-mail" required></label>
+																			
+														<input  type="submit" value="Rejestracja">
+													</form>
+										</div>
 							
-							<label><input type="password" placeholder="Hasło" required></label>
-							
-							<label><input type="email"  placeholder="E-mail" required></label>
-												
-							<input type="submit" value="Rejestracja">
+							</div>
+						
 						</div>
-						
-						<footer>
-						
-							<div class="footer"> 2020 &copy;  Mikołaj Narloch -  Budżet domowy
 
-						</div>
-						</footer>
-				</div>
+					
+				</article>
+		</main>
+
+						
+		<footer>
+						
+					<div class="footer"> 2020 &copy;  Mikołaj Narloch -  Budżet domowy
+
+					</div>
+		</footer>
+		
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 			
-		</form>
+			<script src="js/bootstrap.min.js"></script>
+	
 
 </body>
 
