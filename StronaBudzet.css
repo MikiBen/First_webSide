@@ -7,6 +7,7 @@ body
     font-size: 17px;
 }
 
+
 h1
 {
 	text-align:center;
@@ -240,8 +241,74 @@ input.button
 	
 }
 
+tr>th
+{
+	font-size:20px;
+	text-align:center;
+	border: 2px solid;
+}
+
+tr>td
+{
+	font-size:16px;
+	text-align:center;
+	border: 2px solid;
+}
+
+@media(max-width:800px)
+{
+	tr>th
+{
+	font-size:18px;
+}
+tr>td
+{
+	font-size:14px;
+}
+	
+}
+
+@media(max-width:600px)
+{
+	tr>th
+{
+	font-size:16px;
+}
+	tr>td
+{
+	font-size:12px;
+	
+}
+}
+
+.sum
+{
+	color:green;
+	width:100%;
+	text-align:center;
+	margin-top:30px;
+	font-size:30px;
+}
 
 
 
+.PAmount
+{
+	width:15%;
+}
 
+.PDate
+{
+	width:25%;
+}
+
+.WAmount
+{
+	width:15%;
+}
+
+.WDate
+{
+	width:25%;
+}
 
